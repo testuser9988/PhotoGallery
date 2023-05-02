@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="js/script.js" defer></script>
+    
+</head>
+<body>
+
+    <!-- ローディング画面 -->
+    
+    <div id="loading">
+      <p>Now Loading...</p>
+      <div id="loading-screen"></div>
+    </div>
+
+    <!-- ナビゲーションメニュー ↓↓ 追加 ↓↓ -->
+
+    <!-- ↑↑ 追加 ↑↑ -->
+
+    <section class="top">
+      <h1 class="title">PhotoGallery</h1>
+    </section>
+          
+    <section class="gallery">
+      <h2 class="title fadein">Gallery</h2>
+      <ul class="gallery-thumbnails wrapper fadein">
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img1.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img2.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img3.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img4.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img5.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img6.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img7.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img8.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img9.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img10.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img11.jpg" alt=""></li>
+        <li class="fadein"><img class="gallery-thumbnail" src="images/img12.jpg" alt=""></li>
+      </ul>
+    </section>
+
+    <!-- モーダルウィンドウ -->
+    <section id="modal">
+      <img src="" alt="">
+    </section>
+  
+    <div id="mask"></div>
+    
+    <section class="news">
+      <h2 class="title fadein">News</h2>      
+      <ul class="wrapper news-contents">
+        <li class="news-date fadein">2023.4.25</li>
+        <li class="news-content fadein">WEBサイトを開設しました</li>
+        <li class="news-date fadein">2023.4.26</li>
+        <li class="news-content fadein">ギャラリーを更新しました</li>
+      </ul>
+    </section>
+
+    <section class="profile">
+      <h2 class="title fadein">Profile</h2>
+
+    </section>
+
+    
+</body>
+</html>
