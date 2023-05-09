@@ -87,9 +87,7 @@ fadeElements.forEach((fadeElement) => {
 /*
 画像ギャラリー *
 ================================================================*/
-// モーダル表示 
 const thumbImages = document.querySelectorAll('.gallery-thumbnails img');
-// const close = document.querySelector('#close');
 const modal = document.querySelector('#modal');
 const mask = document.querySelector('#mask');
 const showKeyframes = {
@@ -100,7 +98,7 @@ const hideKeyframes = {
   opacity: [1, 0],
   visibility: 'hidden',
 };
-const options = {
+const modalOptions = {
   duration: 500,
   easing: 'ease',
   fill: 'forwards',
@@ -112,21 +110,21 @@ thumbImages.forEach((thumbImage)=>{
 
     // スクロール位置を取得
     currentScroll = window.scrollY;
-    modal.style.top = String(currentScroll) + 'px';
+
+    console.log(window.screen.height / 2);
 
     // モーダルウィンドウの画像変更
     modal.querySelector('img').src = event.target.src;
 
-    modal.animate(showKeyframes, options);
-    mask.animate(showKeyframes, options);
+    modal.animate(showKeyframes, modalOptions);
+    mask.animate(showKeyframes, modalOptions);
     
   });
 });
 
 // マスクをクリックしてモーダルウィンドウを閉じる
-mask.addEventListener('click', () => {
-  // close.click();
-  modal.animate(hideKeyframes, options);
-  mask.animate(hideKeyframes, options);
+modal.addEventListener('click', () => {
+  modal.animate(hideKeyframes, modalOptions);
+  mask.animate(hideKeyframes, modalOptions);
   
 });

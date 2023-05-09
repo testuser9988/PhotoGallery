@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
 
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js" integrity="sha512-QzKjuc+7pitZqj28ecclxJ2XJD9l91dNb25Er0ixaqYzpMqhKGIPohYN6blR9UfSR5ETL7wncxmEvVarrVwkSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -30,12 +32,12 @@
 
     <!-- ↑↑ 追加 ↑↑ -->
 
-    <section class="top">
-      <h1 class="title">PhotoGallery</h1>
+    <section class="top top_title">
+      <h1>PhotoGallery</h1>
     </section>
           
     <section class="gallery">
-      <h2 class="title fadein">Gallery</h2>
+      <h2 class="content_title fadein">Gallery</h2>
       <ul class="gallery-thumbnails wrapper fadein">
         <li class="fadein"><img class="gallery-thumbnail" src="images/img1.jpg" alt=""></li>
         <li class="fadein"><img class="gallery-thumbnail" src="images/img2.jpg" alt=""></li>
@@ -54,13 +56,13 @@
 
     <!-- モーダルウィンドウ -->
     <section id="modal">
-      <img src="" alt="">
+      <img class="modal_gallery" src="" alt="">
     </section>
   
     <div id="mask"></div>
     
     <section class="news">
-      <h2 class="title fadein">News</h2>      
+      <h2 class="content_title fadein">News</h2>      
       <ul class="wrapper news-contents">
         <li class="news-date fadein">2023.4.25</li>
         <li class="news-content fadein">WEBサイトを開設しました</li>
@@ -70,10 +72,14 @@
     </section>
 
     <section class="profile">
-      <h2 class="title fadein">Profile</h2>
-
+      <h2 class="content_title fadein">Profile</h2>
+      <p class="wrapper profile_contents">S.H<br>1992年生まれ</p>
     </section>
 
-    
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2023 S.H</small></p>
+      </div>
+    </footer>
 </body>
 </html>
