@@ -107,18 +107,11 @@ const modalOptions = {
 // モーダルウィンドウを開く
 thumbImages.forEach((thumbImage)=>{
   thumbImage.addEventListener('click', (event) => {
-
-    // スクロール位置を取得
-    currentScroll = window.scrollY;
-
-    console.log(window.screen.height / 2);
-
     // モーダルウィンドウの画像変更
     modal.querySelector('img').src = event.target.src;
 
     modal.animate(showKeyframes, modalOptions);
     mask.animate(showKeyframes, modalOptions);
-    
   });
 });
 
@@ -126,5 +119,4 @@ thumbImages.forEach((thumbImage)=>{
 modal.addEventListener('click', () => {
   modal.animate(hideKeyframes, modalOptions);
   mask.animate(hideKeyframes, modalOptions);
-  
 });

@@ -6,9 +6,6 @@ VARIABLES
 :root {
     --light-green: #d5edeb;
     --grey: #C0C0C0;
-    --green: #63dbd0;
-    --light-grey: #eee;
-    --white: #fff;
     --oswald-font: 'Oswald', sans-serif;
 }
 
@@ -19,6 +16,7 @@ VARIABLES
 body {
     background-color: #555;
     color: var(--grey);
+    font-family: 'Klee One', cursive;
 }
 
 .top-title {
@@ -50,9 +48,9 @@ img {
 }
 
 
-li {
+/* li {
     font-family: 'Klee One', cursive;
-}
+} */
 
 .fadein {
     opacity: 0;
@@ -182,14 +180,6 @@ footer {
     padding: 20px 0;
 }
 
-/* モバイル版 */
-@media(max-width: 600px){
-    .gallery-thumbnail {
-        border: 1px solid var(--grey);
-        cursor: pointer;
-    }
-}
-
 form div {
     margin-bottom: 14px;
     
@@ -216,7 +206,7 @@ textarea {
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    max-width: 500px;
+    max-width: 480px;
 }
 textarea {
     width: 100%;
@@ -251,4 +241,12 @@ input[type="submit"] {
 
 .sns li {
     margin-right: 20px;
+}
+
+/* モバイル版 */
+@media(max-width: 600px){
+    .gallery-thumbnail {
+        border: 1px solid var(--grey);
+        cursor: pointer;
+    }
 }
