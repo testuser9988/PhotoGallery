@@ -32,12 +32,15 @@
 
     <!-- ↑↑ 追加 ↑↑ -->
 
-    <section class="top top_title">
+    <!-- トップ -->
+    <section class="top top-title">
       <h1>PhotoGallery</h1>
     </section>
           
-    <section class="gallery">
-      <h2 class="content_title fadein">Gallery</h2>
+
+    <!-- Gallery -->
+    <section>
+      <h2 class="content-title fadein">Gallery</h2>
       <ul class="gallery-thumbnails wrapper fadein">
         <li class="fadein"><img class="gallery-thumbnail" src="images/img1.jpg" alt=""></li>
         <li class="fadein"><img class="gallery-thumbnail" src="images/img2.jpg" alt=""></li>
@@ -56,28 +59,64 @@
 
     <!-- モーダルウィンドウ -->
     <section id="modal">
-      <img class="modal_gallery" src="" alt="">
+      <img class="modal-gallery" src="" alt="">
     </section>
   
     <div id="mask"></div>
     
-    <section class="news">
-      <h2 class="content_title fadein">News</h2>      
+    <!-- News -->
+    <section>
+      <h2 class="content-title fadein">News</h2>      
       <ul class="wrapper news-contents">
+        <li class="news-date fadein">2023.5.11</li>
+        <li class="news-content fadein">ギャラリーを更新しました</li>
         <li class="news-date fadein">2023.4.25</li>
         <li class="news-content fadein">WEBサイトを開設しました</li>
-        <li class="news-date fadein">2023.4.26</li>
-        <li class="news-content fadein">ギャラリーを更新しました</li>
       </ul>
     </section>
 
-    <section class="profile">
-      <h2 class="content_title fadein">Profile</h2>
-      <p class="wrapper profile_contents">S.H<br>1992年生まれ</p>
+    <!-- Profile -->
+    <section>
+      <h2 class="content-title fadein">Profile</h2>
+      <p class="wrapper profile-contents fadein">S.H<br>1992年生まれ</p>
     </section>
 
+    <!-- Contact -->
+    <section>
+      <h2 class="content-title fadein">Contact</h2>
+      <form class="wrapper fadein" action="#">        
+        <div>
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="your-name">
+        </div>
+
+        <div>
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="your-email">
+        </div>
+
+        <div>
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="your-message"></textarea>
+        </div>
+
+        <input type="button" class="button" value="送信">
+      </form>
+    </section>
+
+    <br>
+
     <footer>
+      
       <div class="wrapper">
+        <ul class="sns">
+          <li><a href="https://twitter.com/" target="_blank"><img src="images/2021 Twitter logo - white.png" style="height: 16px ;"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank"><img src="images/yt_icon_mono_dark.png" style="height: 16px ;"></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_72.png" style="height: 20px ;"></a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+
         <p><small>&copy; 2023 S.H</small></p>
       </div>
     </footer>

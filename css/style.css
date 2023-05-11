@@ -7,7 +7,6 @@ VARIABLES
     --light-green: #d5edeb;
     --grey: #C0C0C0;
     --green: #63dbd0;
-    --brown: #403632;
     --light-grey: #eee;
     --white: #fff;
     --oswald-font: 'Oswald', sans-serif;
@@ -22,7 +21,7 @@ body {
     color: var(--grey);
 }
 
-.top_title {
+.top-title {
     font-size: min(10vw, 4rem);
     font-family: 'Kalam', cursive;
     display: flex;
@@ -32,7 +31,7 @@ body {
     
 }
 
-.content_title {
+.content-title {
     /* color: var(--grey); */
     font-size: min(10vw, 4rem);
     font-family: 'Kalam', cursive;
@@ -94,12 +93,6 @@ Top
 /*
 Gallery
 ================================================ */
-
-.gallery {
-
-}
-
-
 .gallery-thumbnails {
     display: grid;
     gap: 26px;
@@ -146,16 +139,11 @@ News
 /*
 Profile
 ================================================ */
-.profile {
-
-}
-
-.profile_contents {
+.profile-contents {
     margin-top: 6%;
     text-align: center;
     line-height: 3;
 }
-
 
 /*
 モーダルウィンドウ
@@ -182,7 +170,7 @@ Profile
 }
 
 
-.modal_gallery {
+.modal-gallery {
     width: 900px;
     border: 10px solid var(--grey);
     border-radius: 10px;
@@ -200,11 +188,67 @@ footer {
         border: 1px solid var(--grey);
         cursor: pointer;
     }
-    
+}
 
+form div {
+    margin-bottom: 14px;
+    
+}
+
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(211,211,211);
+    border: 1px var(--grey) solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
 
 }
 
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 240px;
+    
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* ボタン */
+.button {
+    background: #778899;
+    color: #fff;
+    border-radius: 5px;
+    padding:10px 25px;
+}
+
+.button:hover {
+    background: #708090;
+}
 
 
+/* SNS */
+.sns {
+    display: flex;
+    list-style: none;
+}
 
+.sns li {
+    margin-right: 20px;
+}
