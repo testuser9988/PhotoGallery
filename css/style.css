@@ -101,6 +101,7 @@ Gallery
 
 }
 
+/* ギャラリーサムネイルのCSS (PC版)*/
 @media (min-width: 601px) {
 
     .gallery-thumbnails img:hover {
