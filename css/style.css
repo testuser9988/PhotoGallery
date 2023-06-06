@@ -12,11 +12,14 @@ VARIABLES
 /*
 共通
 ================================================ */
-
 body {
     background-color: #555;
     color: var(--grey);
     font-family: 'Klee One', cursive;
+}
+
+a {
+    text-decoration: none;
 }
 
 .top-title {
@@ -30,7 +33,6 @@ body {
 }
 
 .content-title {
-    /* color: var(--grey); */
     font-size: min(10vw, 4rem);
     font-family: 'Kalam', cursive;
     text-align: center;
@@ -46,11 +48,6 @@ body {
 img {
     max-width: 100%;
 }
-
-
-/* li {
-    font-family: 'Klee One', cursive;
-} */
 
 .fadein {
     opacity: 0;
@@ -78,6 +75,40 @@ img {
     font-size: 2rem;
     font-family: var(--oswald-font);
     color: #403632;
+}
+
+/*
+ヘッダー
+================================================ */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    z-index: 999;
+
+}
+
+.page-header li {
+    margin-right: 36px;
+}
+
+.page-header a {
+    color: #C0C0C0;
+}
+
+.page-header a:hover {
+    color: #778899;
+}
+
+/* フッター */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
 }
 
 /*
@@ -117,6 +148,7 @@ Gallery
     cursor: pointer;
     border-radius: 5px;
 }
+
 /*
 News
 ================================================ */
@@ -155,6 +187,7 @@ Profile
     opacity: 0;
     visibility: hidden;
 }
+
 #modal {
     position: fixed;
     top:0;
@@ -168,19 +201,15 @@ Profile
     visibility: hidden;
 }
 
-
 .modal-gallery {
     width: 900px;
     border: 10px solid var(--grey);
     border-radius: 10px;
 }
 
-footer {
-    background: #000;
-    text-align: center;
-    padding: 20px 0;
-}
-
+/*
+Contact
+================================================ */
 form div {
     margin-bottom: 14px;
     
@@ -209,12 +238,14 @@ input[type="email"] {
     width: 100%;
     max-width: 480px;
 }
+
 textarea {
     width: 100%;
     max-width: 480px;
     height: 240px;
     
 }
+
 input[type="submit"] {
     border: none;
     cursor: pointer;
@@ -249,5 +280,8 @@ input[type="submit"] {
     .gallery-thumbnail {
         border: 1px solid var(--grey);
         cursor: pointer;
+    }
+    .page-header {
+        display: none;
     }
 }

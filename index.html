@@ -9,36 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js" integrity="sha512-QzKjuc+7pitZqj28ecclxJ2XJD9l91dNb25Er0ixaqYzpMqhKGIPohYN6blR9UfSR5ETL7wncxmEvVarrVwkSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js" integrity="sha512-QzKjuc+7pitZqj28ecclxJ2XJD9l91dNb25Er0ixaqYzpMqhKGIPohYN6blR9UfSR5ETL7wncxmEvVarrVwkSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js" defer></script>
     
 </head>
 <body>
-
-    <!-- ローディング画面 -->
-    
+    <!-- ローディング画面 -->    
     <div id="loading">
       <p>Now Loading...</p>
       <div id="loading-screen"></div>
     </div>
 
-    <!-- ナビゲーションメニュー ↓↓ 追加 ↓↓ -->
+    <!-- Top -->
+    <header class="wrapper">
+      <nav>
+        <ul class="page-header">
+          <li><a href="#jump-top">Top</a></li>
+          <li><a href="#jump-gallery">Gallery</a></li>
+          <li><a href="#jump-news">News</a></li>
+          <li><a href="#jump-profile">Profile</a></li>
+          <li><a href="#jump-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- ↑↑ 追加 ↑↑ -->
-
-    <!-- トップ -->
-    <section class="top top-title">
+    <section id="jump-top" class="top top-title">
       <h1>PhotoGallery</h1>
     </section>
-          
 
     <!-- Gallery -->
-    <section>
-      <h2 class="content-title fadein">Gallery</h2>
+    <section >
+      <h2 id="jump-gallery" class="content-title fadein">Gallery</h2>
       <ul class="gallery-thumbnails wrapper fadein">
         <li class="fadein"><img class="gallery-thumbnail" src="images/img1.jpg" alt=""></li>
         <li class="fadein"><img class="gallery-thumbnail" src="images/img2.jpg" alt=""></li>
@@ -63,7 +66,7 @@
     <div id="mask"></div>
     
     <!-- News -->
-    <section>
+    <section id="jump-news">
       <h2 class="content-title fadein">News</h2>      
       <ul class="wrapper news-contents">
         <li class="news-date fadein">2023.5.11</li>
@@ -74,51 +77,40 @@
     </section>
 
     <!-- Profile -->
-    <section>
+    <section id="jump-profile">
       <h2 class="content-title fadein">Profile</h2>
       <p class="wrapper profile-contents fadein">S.H<br>1992年生まれ<br>趣味：写真撮影、アクアリウム、ゲーム</p>
     </section>
 
     <!-- Contact -->
-    <section>
+    <section id="jump-contact">
       <h2 class="content-title fadein">Contact</h2>
-      
-        <form class="wrapper fadein" action="#" style="text-align: center;">
-          <div>
-            
-            <label  for="name">お名前</label>
-            <input type="text" id="name" name="your-name">
-          </div>
-  
-          <div>
-            <label for="email">メールアドレス</label>
-            <input type="email" id="email" name="your-email">
-          </div>
-  
-          <div>
-            <label for="message">メッセージ</label>
-            <textarea id="message" name="your-message"></textarea>
-          </div>
-  
-          <input type="button" class="button" value="送信">
-        </form>
-
-      
+      <form class="wrapper fadein" action="#" style="text-align: center;">
+        <div>
+          <label  for="name">お名前</label>
+          <input type="text" id="name" name="your-name">
+        </div>
+        <div>
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="your-email">
+        </div>
+        <div>
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="your-message"></textarea>
+        </div>
+        <input type="button" class="button" value="送信">
+      </form>
     </section>
 
-    <br>
-
     <footer>
-      
       <div class="wrapper">
         <ul class="sns">
-          <li><a href="https://twitter.com/" target="_blank"><img src="images/2021 Twitter logo - white.png" style="height: 16px ;"></a></li>
-          <li><a href="https://www.youtube.com/" target="_blank"><img src="images/yt_icon_mono_dark.png" style="height: 16px ;"></a></li>
-          <li><a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_72.png" style="height: 20px ;"></a></li>
+          <li><a href="https://twitter.com/" target="_blank"><img src="images/2021 Twitter logo - white.png" style="height: 16px;"></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank"><img src="images/yt_icon_mono_dark.png" style="height: 16px;"></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><img src="images/f_logo_RGB-White_72.png" style="height: 20px;"></a></li>
         </ul>
       </div>
       <div class="wrapper">
-
         <p><small>&copy; 2023 S.H</small></p>
       </div>
     </footer>

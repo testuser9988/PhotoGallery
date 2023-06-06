@@ -2,7 +2,6 @@
 ローディングから画面遷移 
 ================================================================*/
 const loadingAreaGrey = document.querySelector("#loading");
-// const loadingAreaGreen = document.querySelector("#loading-screen");
 const loadingText = document.querySelector("#loading p");
 window.addEventListener('load', () => {
   // ローディング中（グレイスクリーン）
@@ -18,19 +17,6 @@ window.addEventListener('load', () => {
       fill: 'forwards',
     }
   );
-
-  // // ローディング中（薄緑スクリーン）
-  // loadingAreaGreen.animate(
-  //   {
-  //     translate: ['0 100vh', '0 0', '0 -100vh']
-  //   },
-  //   {
-  //     duration: 2000,
-  //     delay: 800,
-  //     easing: 'ease',
-  //     fill: 'forwards',
-  //   }
-  // );
 
   // ローディング中テキスト
   loadingText.animate(
@@ -51,6 +37,27 @@ window.addEventListener('load', () => {
       fill: 'forwards',
     }
   );
+});
+
+/*
+ヘッダーリンク押下時
+================================================================*/
+window.addEventListener('DOMContentLoaded', () => {
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
+
+  anchorLinksArr.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.hash;
+      const targetElement = document.querySelector(targetId);
+      const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
+      window.scrollTo({
+        top: targetOffsetTop,
+        behavior: "smooth"
+      });
+    });
+  });
 });
 
 // 監視対象が範囲内に現れたら実行する動作
